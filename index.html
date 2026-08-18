@@ -1,124 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nikhitha K — AI & Machine Learning Engineering student portfolio, projects, skills and contact information.">
-  <meta name="keywords" content="Nikhitha K, AIML, AI, Machine Learning, portfolio, web development">
-  <meta name="author" content="Nikhitha K">
-  <meta name="theme-color" content="#2563eb">
-  <title>Nikhitha K | AI & ML Engineering Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive AI/ML engineering portfolio">
+  <title>Alex Morgan | AI/ML Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Nikhitha K home">NK<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Alex Morgan home">
+        <span>&lt;</span>AM<span>/&gt;</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
-        <span class="sr-only">Open navigation menu</span>
       </button>
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a class="active" aria-current="page" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+      </div>
+    </nav>
   </header>
 
-  <main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">AI & MACHINE LEARNING ENGINEERING</p>
-          <h1 id="hero-title">Building useful ideas with <span>AI, code & creativity.</span></h1>
-          <p class="lead">I'm Nikhitha, a BE AIML student passionate about intelligent applications, web development and solving real-world problems with technology.</p>
-          <div class="button-row">
-            <a class="btn primary" href="projects.html">View my projects</a>
-            <a class="btn secondary" href="contact.html">Let's connect</a>
-          </div>
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">AI/ML ENGINEERING • WEB DEVELOPMENT</p>
+        <h1>Building <span>smart</span> ideas into beautiful digital experiences.</h1>
+        <p class="hero-text">
+          I create responsive websites and practical AI-powered solutions with clean,
+          modern interfaces and user-focused experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Let's Connect</a>
         </div>
-        <aside class="hero-card" aria-label="Quick profile">
-          <div class="avatar" aria-hidden="true">NK</div>
-          <h2>Nikhitha K</h2>
-          <p>BE — Artificial Intelligence & Machine Learning</p>
-          <ul class="quick-stats">
-            <li><strong>8.5</strong><span>CGPA</span></li>
-            <li><strong>2028</strong><span>Graduation</span></li>
-            <li><strong>AIML</strong><span>Focus</span></li>
-          </ul>
-        </aside>
+        <div class="quick-stats" aria-label="Portfolio statistics">
+          <div><strong>08+</strong><span>Projects</span></div>
+          <div><strong>05+</strong><span>Technologies</span></div>
+          <div><strong>100%</strong><span>Curiosity</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="code-card">
+          <div class="code-top"><i></i><i></i><i></i><span>portfolio.js</span></div>
+          <pre><code><span class="pink">const</span> developer = {
+  name: <span class="green">"Alex"</span>,
+  focus: <span class="green">"AI + Web"</span>,
+  passion: <span class="green">"Building"</span>,
+  status: <span class="green">"Learning 🚀"</span>
+};
+
+developer.<span class="blue">create</span>();</code></pre>
+        </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="highlights-title">
+    <section class="section" id="about">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">WHAT I DO</p>
-          <h2 id="highlights-title">Turning learning into projects</h2>
+          <p class="eyebrow">01 — ABOUT</p>
+          <h2>A little about me</h2>
         </div>
-        <div class="card-grid three">
-          <article class="info-card">
-            <div class="icon" aria-hidden="true">AI</div>
-            <h3>AI & ML</h3>
-            <p>Exploring machine learning, AI assistants, intelligent systems and practical problem solving.</p>
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-icon">✦</div>
+            <h3>Curious by nature</h3>
+            <p>I enjoy understanding how technology works and turning what I learn into useful projects.</p>
           </article>
-          <article class="info-card">
-            <div class="icon" aria-hidden="true">WEB</div>
-            <h3>Web Development</h3>
-            <p>Creating responsive, accessible interfaces with HTML, CSS and JavaScript.</p>
+          <article class="about-card featured">
+            <div class="about-icon">⌘</div>
+            <h3>Problem solver</h3>
+            <p>From frontend interfaces to AI concepts, I focus on simple solutions that solve real problems.</p>
           </article>
-          <article class="info-card">
-            <div class="icon" aria-hidden="true">DSA</div>
-            <h3>Problem Solving</h3>
-            <p>Strengthening data structures, algorithms and programming fundamentals for technical interviews.</p>
+          <article class="about-card">
+            <div class="about-icon">↗</div>
+            <h3>Always improving</h3>
+            <p>I continuously practice programming, design, data structures and modern development workflows.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section tinted" aria-labelledby="featured-title">
+    <section class="section skills-section" id="skills">
       <div class="container">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">FEATURED WORK</p>
-            <h2 id="featured-title">A few things I've built</h2>
-          </div>
-          <a class="text-link" href="projects.html">See all projects →</a>
+        <div class="section-heading">
+          <p class="eyebrow">02 — SKILLS</p>
+          <h2>My technical toolkit</h2>
         </div>
-        <div class="card-grid two">
-          <article class="project-card">
-            <div class="project-top">☁</div>
-            <div class="project-body">
-              <p class="tag">HTML · CSS · JavaScript · API</p>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-list">
+              <span>Python</span><span>Java</span><span>C</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Web</h3>
+            <div class="skill-list">
+              <span>HTML5</span><span>CSS3</span><span>Responsive Design</span><span>APIs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>AI & Data</h3>
+            <div class="skill-list">
+              <span>Machine Learning</span><span>Pandas</span><span>Data Analysis</span><span>NLP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="skill-list">
+              <span>Git</span><span>GitHub</span><span>VS Code</span><span>Streamlit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading heading-row">
+          <div>
+            <p class="eyebrow">03 — PROJECTS</p>
+            <h2>Things I've built</h2>
+          </div>
+          <p class="heading-note">A selection of learning and practical projects.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-large">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <span class="project-tag">AI • WEB APP</span>
               <h3>WeatherGenie</h3>
-              <p>A smart weather assistant that combines conversational UI with current weather and forecast data.</p>
-              <a class="text-link" href="projects.html#weathergenie">Read project →</a>
+              <p>A smart weather assistant with current conditions, forecasts, quick replies and a conversational interface.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span></div>
+              <a href="#contact" class="project-link">View project <span>↗</span></a>
             </div>
           </article>
+
           <article class="project-card">
-            <div class="project-top">🤖</div>
-            <div class="project-body">
-              <p class="tag">AI · Web · Chatbot</p>
-              <h3>AI Assistant Concepts</h3>
-              <p>Exploring practical chatbot and AI-agent ideas for services, information access and automation.</p>
-              <a class="text-link" href="projects.html#ai-assistant">Read project →</a>
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <span class="project-tag">WEB DEVELOPMENT</span>
+              <h3>Smart Chatbot</h3>
+              <p>A responsive chatbot interface designed for smooth conversations and a clean user experience.</p>
+              <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <a href="#contact" class="project-link">View project <span>↗</span></a>
             </div>
           </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <span class="project-tag">DATA • AI</span>
+              <h3>Farmer Profit Assistant</h3>
+              <p>An AI-focused concept for helping farmers understand costs, locations, crops and potential profitability.</p>
+              <div class="project-tech"><span>Python</span><span>Pandas</span><span>Streamlit</span></div>
+              <a href="#contact" class="project-link">View project <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">04 — PROCESS</p>
+          <h2>How I build</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step"><span>01</span><h3>Discover</h3><p>Understand the problem, users and goals.</p></div>
+          <div class="process-step"><span>02</span><h3>Design</h3><p>Plan structure, interactions and responsive layouts.</p></div>
+          <div class="process-step"><span>03</span><h3>Build</h3><p>Develop clean, accessible and maintainable code.</p></div>
+          <div class="process-step"><span>04</span><h3>Refine</h3><p>Test across screen sizes and improve the experience.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-box">
+        <div>
+          <p class="eyebrow">05 — CONTACT</p>
+          <h2>Have an idea?<br><span>Let's build it.</span></h2>
+          <p>I'm open to projects, internships, collaborations and learning opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:your.email@example.com">Email Me</a>
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span data-year></span> Nikhitha K. Built with semantic HTML5.</p>
-      <a href="contact.html">Contact me</a>
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Alex Morgan</span>
+      <span>Designed & built with HTML, CSS & JavaScript.</span>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
